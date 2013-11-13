@@ -1,0 +1,97 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+.zerobound {
+    padding: 0;
+    margin: 0;
+}
+#topNav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #aa9984;
+    color: #fff;
+    width: 100%;
+}
+@media (min-width: 310px) and (max-width: 470px) {
+    #bgMulai {
+        background: url('../img/mdpi-portrait/transisi-mdpi.png') no-repeat;
+        height: 480px;
+        padding: 390px 0px 0px 0px;
+        text-align: center;
+    }
+    #mulaiBtn {
+        max-width: 105px;
+    }
+    #bgMenu {
+        background: url('../img/mdpi-portrait/menubg-hdpi-portrait-tanpa-button-flatten.png') no-repeat;
+        height: 480px;
+        padding: 170px 0px 0px 0px;
+        text-align: center;
+    }
+    #menuList li {
+        list-style: none;
+        padding: 0px 0px 15px 0px;
+        margin: 0;
+    }
+    .menuBtn {
+        max-width: 211px;
+    }
+    #topNav {
+        height: 41px;
+    }
+    #topNav img {
+        max-height: 41px;
+        max-width: 276px;
+    }
+    #content {
+        margin: 41px 0px 0px 0px;
+    }
+}
+@media (min-width: 471px) and (max-width: 490px) {
+    #bgMulai {
+        background: url('../img/hdpi-portrait/transisi-hdpi-portrait-tanpa-button-flatten.png') no-repeat;
+        height: 150px;
+        padding: 650px 0px 0px 0px;
+        text-align: center;
+    }
+    #mulaiBtn {
+        max-width: 163px;
+    }
+    #bgMenu {
+        background: url('../img/hdpi-portrait/menubg-hdpi-portrait-tanpa-button-flatten.png') no-repeat;
+        height: 492px;
+        padding: 250px 0px 0px 0px;
+        text-align: center;
+    }
+    #menuList li {
+        list-style: none;
+        padding: 0px 0px 30px 0px;
+        margin: 0;
+    }
+    .menuBtn {
+        max-width: 340px;
+    }
+    #topNav {
+        height: 58px;
+    }
+    #topNav img {
+        max-height: 58px;
+        max-width: 418px;
+    }
+    #content {
+        margin: 58px 0px 0px 0px;
+    }
+    .bgBelajar {
+        background: url('../img/hdpi-portrait/belajarbg-hdpi-portrait-tanpa-button-flatten.png') no-repeat;
+        height: 492px;
+        padding: 250px 0px 0px 0px;
+        text-align: center;
+    }
+    #gamesMenu li {
+        list-style: none;
+        padding: 0px 0px 30px 0px;
+        margin: 0;
+    }
+}

@@ -1,112 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="aksaraJawa">
 
 <head>
     <meta charset="utf-8" />
     <meta name="format-detection" content="telephone=no" />
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-    <link rel="stylesheet" href="css/jquery.mobile.structure-1.3.2.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/foundation-icons.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
     <title>Sinau Aksara Jawa</title>
 </head>
 
 <body>
-
-    <!-- Start of first page: #mulai -->
-    <div data-role="page" id="mulai">
-        <a href="#menu" data-transition="fade">
-            <div id="blangkon">
-                <img src="img/transisi-button-mulai-a.png">
-            </div>
-        </a>
-    </div>
-    <!-- /page mulai -->
-
-    <!-- Start of second page: #menu -->
-    <div data-role="page" id="menu">
-        <div id="sinau">
-            <ul id="menu-utama">
-                <li>
-                    <a href="#sejarah" data-transition="slide">
-                        <img src="img/button1-menu.png">
-                    </a>
-                </li>
-                <li>
-                    <a href="#belajar" data-transition="slide">
-                        <img src="img/button2-menu.png">
-                    </a>
-                </li>
-                <li>
-                    <a href="#games" data-transition="slide">
-                        <img src="img/button3-menu.png">
-                    </a>
-                </li>
-                <li>
-                    <a href="#bantuan" data-transition="slide">
-                        <img src="img/button4-menu.png">
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <!-- /page menu -->
-
-    <!-- Start of third page: #sejarah -->
-    <div data-role="page" id="sejarah">
-        <a href="#menu" data-transition="slide" data-direction="reverse">
-            <img src="img/back-button-mdpi-a.png">
-        </a>
-        <img src="img/button-halaman-sejarah-atas.png" class="headbar">
-        <div data-role="content" class="zerobound">
-            <div id="sejarah-content"></div>
-        </div>
-        <!-- /content -->
-    </div>
-    <!-- /page sejarah -->
-
-    <!-- Start of third page: #belajar -->
-    <div data-role="page" id="belajar">
-        <a href="#menu" data-transition="slide" data-direction="reverse">
-            <img src="img/back-button-mdpi-a.png">
-        </a>
-        <img src="img/button-atas-belajar-mdpi-a.png" class="headbar">
-        <div data-role="content" class="zerobound">
-            <div id="belajar-content"></div>
-        </div>
-        <!-- /content -->
-    </div>
-    <!-- /page belajar -->
-
-    <!-- Start of third page: #games -->
-    <div data-role="page" id="games">
-        <a href="#menu" data-transition="slide" data-direction="reverse">
-            <img src="img/back-button-mdpi-a.png">
-        </a>
-        <img src="img/button-halaman-sejarah-atas.png" class="headbar">
-        <div data-role="content" class="zerobound">
-
-        </div>
-        <!-- /content -->
-    </div>
-    <!-- /page games -->
-
-    <!-- Start of third page: #bantuan -->
-    <div data-role="page" id="bantuan">
-        <a href="#menu" data-transition="slide" data-direction="reverse">
-            <img src="img/back-button-mdpi-a.png">
-        </a>
-        <img src="img/button-halaman-sejarah-atas.png" class="headbar">
-        <div data-role="content" class="zerobound">
-
-        </div>
-        <!-- /content -->
-    </div>
-    <!-- /page bantuan -->
-
+    <div ng-view></div>
     <script type="text/javascript" src="phonegap.js"></script>
-    <script src="js/jquery-1.8.3.min.js"></script>
-    <script src="js/jquery.mobile-1.3.2.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-animate.min.js"></script>
+    <script src="js/angular-route.min.js"></script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>
