@@ -1,24 +1,26 @@
-<div id="bgMenu">
-    <ul id="menuList">
-        <li>
-            <a href="#/sejarah">
-                <img class="menuBtn" src="img/hdpi-portrait/button1-menu-hdpi-a.png">
-            </a>
-        </li>
-        <li>
-            <a href="#/belajar">
-                <img class="menuBtn" src="img/hdpi-portrait/button2-menu-hdpi-a.png">
-            </a>
-        </li>
-        <li>
-            <a href="#/games">
-                <img class="menuBtn" src="img/hdpi-portrait/button3-menu-hdpi-a.png">
-            </a>
-        </li>
-        <li>
-            <a href="#/bantuan">
-                <img class="menuBtn" src="img/hdpi-portrait/button4-menu-hdpi-a.png">
-            </a>
-        </li>
-    </ul>
+<div id="menu">
+    <div class="content">
+        <ul class="menulist">
+            <li>
+                <a ng-click="go('/selayang');">
+                    <img src="img/mdpi/menu-1.png" ng-src-responsive="[ [ '(min-width: 479px)', 'img/hdpi/menu-1.png' ] ]" />
+                </a>
+            </li>
+            <li>
+                <a ng-click="go('/belajar');">
+                    <img src="img/mdpi/menu-2.png" ng-src-responsive="[ [ '(min-width: 479px)', 'img/hdpi/menu-2.png' ] ]" />
+                </a>
+            </li>
+            <li>
+                <a ng-click="go('/permainan');">
+                    <img src="img/mdpi/menu-3.png" ng-src-responsive="[ [ '(min-width: 479px)', 'img/hdpi/menu-3.png' ] ]" />
+                </a>
+            </li>
+            <li>
+                <a ng-click="go('/bantuan');">
+                    <img src="img/mdpi/menu-4.png" ng-src-responsive="[ [ '(min-width: 479px)', 'img/hdpi/menu-4.png' ] ]" />
+                </a>
+            </li>
+        </ul>
+    </div>
 </div>

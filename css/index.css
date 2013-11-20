@@ -1,0 +1,188 @@
+/* font */
+ @font-face {
+    font-family:'Lato';
+    src: url('lato-bold-webfont.eot');
+    src: url('lato-bold-webfont.eot?#iefix') format('embedded-opentype'), url('lato-bold-webfont.woff') format('woff'), url('lato-bold-webfont.ttf') format('truetype'), url('lato-bold-webfont.svg#latobold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family:'Lato';
+    src: url('lato-regular-webfont.eot');
+    src: url('lato-regular-webfont.eot?#iefix') format('embedded-opentype'), url('lato-regular-webfont.woff') format('woff'), url('lato-regular-webfont.ttf') format('truetype'), url('lato-regular-webfont.svg#latoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* ---- */
+
+/* general markup */
+ * {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+body {
+    -webkit-touch-callout: none;
+    /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;
+    /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;
+    /* prevent copy paste, to allow, change 'none' to 'text' */
+    background-color:#fff;
+    font-family:"Lato", Helvetica, Arial, sans-serif;
+    font-size:18px;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    width:100%;
+}
+a, input, button {
+    -ms-touch-action: none !important;
+}
+/* ---- */
+
+/* animation */
+ .mulai-anim {
+    -webkit-animation-name: pulse;
+    -moz-animation-name: pulse;
+    -o-animation-name: pulse;
+    animation-name: pulse;
+    -webkit-animation: pulse 0.7s infinite linear;
+}
+.animation.ng-enter, .animation.ng-leave {
+    -webkit-transition:0.5s linear all;
+    -moz-transition:0.5s linear all;
+    -o-transition:0.5s linear all;
+    transition:0.5s linear all;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+}
+.animation.ng-enter {
+    z-index:100;
+    opacity:0;
+}
+.animation.ng-enter.ng-enter-active {
+    top:0;
+    opacity:1;
+}
+.animation.ng-leave {
+    z-index:101;
+    top:0;
+    opacity:1;
+}
+.animation.ng-leave.ng-leave-active {
+    opacity:0;
+}
+.menu.ng-enter, .menu.ng-leave {
+    -webkit-transition:0.5s linear all;
+    -moz-transition:0.5s linear all;
+    -o-transition:0.5s linear all;
+    transition:0.5s linear all;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+}
+.menu.ng-enter {
+    z-index:100;
+    opacity:0;
+}
+.menu.ng-enter.ng-enter-active {
+    opacity:1;
+}
+.menu.ng-leave {
+    z-index:101;
+    opacity:1;
+}
+.menu.ng-leave.ng-leave-active {
+    opacity:0;
+}
+/* ---- */
+
+/* route */
+ .mulaiCtrl {
+}
+.menuCtrl {
+}
+.contentCtrl {
+}
+/* ---- */
+
+/* custom */
+ .putih {
+    color: #fff;
+}
+/* ---- */
+
+/* mdpi */
+ @media (min-width: 319px) and (max-width: 321px) {
+    #mulai {
+        text-align: center;
+        background: url('../img/mdpi/mulai.jpg') no-repeat 0 0;
+        height: 480px;
+        padding: 392px 0px 0px 0px;
+    }
+    #menu {
+        text-align: center;
+        background: url('../img/mdpi/menu.jpg') no-repeat 0 0;
+        height: 480px;
+        padding: 150px 0px 0px 0px;
+    }
+    #selayang {
+        text-align: center;
+        background: url('../img/mdpi/selayang.jpg') no-repeat 0 0;
+        height: 480px;
+        padding: 145px 0px 0px 0px;
+    }
+    #selayang-1 {
+        text-align: center;
+        background: url('../img/mdpi/selayang.jpg') no-repeat 0 0;
+        height: 480px;
+        padding: 145px 10px 0px 10px;
+    }
+    #selayang-1-content {
+        overflow-x: hidden;
+        overflow-y: scroll;
+        height: 275px;
+        text-align: left;
+        margin: 0px 0px 5px 0px;
+    }
+    #selayang-1-content img {
+        float: left;
+    }
+    .menulist {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .menulist li {
+        margin: 0px 0px 10px 0px;
+    }
+    .animation.ng-enter, .animation.ng-leave {
+        height: 480px;
+    }
+    .animation.ng-enter {
+        top:480px;
+    }
+    .animation.ng-leave.ng-leave-active {
+        top:-480px;
+    }
+}
+/* ---- */
+
+/* hdpi */
+ @media (min-width: 479px) and (max-width: 481px) {
+    #mulai {
+        text-align: center;
+        background: url('../img/hdpi/mulai.jpg') no-repeat 0 0;
+        height: 800px;
+        padding: 785px 0px 0px 0px;
+    }
+}
+/* ---- */
+
+/* xhdpi */
+ @media (min-width: 719px) and (max-width: 721px) {
+}
+/* ---- */

@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.btkpdiy.aksarajawa" version="1.0.0">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.phonegap.hello-world" version="1.0.0">
 
-    <name>Sinau Aksara Jawa</name>
+    <name>Aksara Jawa</name>
 
     <description>
-        Sinau Aksara Jawa.
+        Belajar Huruf Jawa (Aksara Jawa).
     </description>
 
-    <author href="http://btkp-diy.or.id" email="btkp_jogja@yahoo.co.id">
-        Tim Pengembang Aplikasi Mobile BTKP DIY
+    <author href="http://phonegap.com" email="support@phonegap.com">
+        Balai Tekkomdik DIY
     </author>
 
     <!--
