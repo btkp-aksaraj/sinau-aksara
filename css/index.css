@@ -35,6 +35,7 @@ body {
     margin:0px;
     padding:0px;
     width:100%;
+    color: #444;
 }
 a, input, button {
     -ms-touch-action: none !important;
@@ -117,7 +118,7 @@ a, input, button {
 /* ---- */
 
 /* mdpi */
- @media (min-width: 319px) and (max-width: 321px) {
+ @media (min-width: 1px) and (max-width: 479px) {
     #mulai {
         text-align: center;
         background: url('../img/mdpi/mulai.jpg') no-repeat 0 0;
@@ -136,11 +137,71 @@ a, input, button {
         height: 480px;
         padding: 145px 0px 0px 0px;
     }
+    #belajar {
+        text-align: center;
+        background: url('../img/mdpi/belajar.jpg') no-repeat 0 0;
+        height: 480px;
+        padding: 145px 0px 0px 0px;
+    }
+    #permainan {
+        text-align: center;
+        background: url('../img/mdpi/permainan.jpg') no-repeat 0 0;
+        height: 480px;
+        padding: 150px 0px 0px 0px;
+    }
+    #bantuan {
+        text-align: center;
+        background: url('../img/mdpi/bantuan.jpg') no-repeat 0 0;
+        height: 480px;
+        padding: 150px 0px 0px 0px;
+    }
+    #belajar-1 {
+        text-align: center;
+        background: url('../img/mdpi/belajar-1.jpg') no-repeat 0 0;
+        height: 480px;
+        padding: 145px 0px 0px 0px;
+    }
+    #belajar-2 {
+        text-align: center;
+        background: url('../img/mdpi/belajar-2.jpg') no-repeat 0 0;
+        height: 480px;
+        padding: 145px 0px 0px 0px;
+    }
+    #belajar-3 {
+        text-align: center;
+        background: url('../img/mdpi/belajar-3.jpg') no-repeat 0 0;
+        height: 480px;
+        padding: 145px 0px 0px 0px;
+    }
+    #belajar-4 {
+        text-align: center;
+        background: url('../img/mdpi/belajar-4.jpg') no-repeat 0 0;
+        height: 480px;
+        padding: 145px 0px 0px 0px;
+    }
     #selayang-1 {
         text-align: center;
-        background: url('../img/mdpi/selayang.jpg') no-repeat 0 0;
+        background: url('../img/mdpi/selayang-1.jpg') no-repeat 0 0;
         height: 480px;
-        padding: 145px 10px 0px 10px;
+        padding: 145px 0px 0px 0px;
+    }
+    #selayang-2 {
+        text-align: center;
+        background: url('../img/mdpi/selayang-2.jpg') no-repeat 0 0;
+        height: 480px;
+        padding: 145px 0px 0px 0px;
+    }
+    #selayang-3 {
+        text-align: center;
+        background: url('../img/mdpi/selayang-3.jpg') no-repeat 0 0;
+        height: 480px;
+        padding: 145px 0px 0px 0px;
+    }
+    #selayang-4 {
+        text-align: center;
+        background: url('../img/mdpi/selayang-4.jpg') no-repeat 0 0;
+        height: 480px;
+        padding: 145px 0px 0px 0px;
     }
     #selayang-1-content {
         overflow-x: hidden;
@@ -148,9 +209,33 @@ a, input, button {
         height: 275px;
         text-align: left;
         margin: 0px 0px 5px 0px;
+        padding: 0px 10px 0px 10px;
+        -webkit-overflow-scrolling: touch;
     }
     #selayang-1-content img {
         float: left;
+        padding: 5px;
+    }
+    #belajar-1-content {
+        overflow-x: hidden;
+        overflow-y: scroll;
+        height: 265px;
+        text-align: left;
+        margin: 0px 38px 25px 38px;
+        padding: 0px 0px 0px 0px;
+        -webkit-overflow-scrolling: touch;
+    }
+    #bantuan-content {
+        overflow-x: hidden;
+        overflow-y: scroll;
+        height: 275px;
+        text-align: left;
+        margin: 0px 0px 5px 0px;
+        padding: 0px 10px 0px 10px;
+        -webkit-overflow-scrolling: touch;
+    }
+    .aksara {
+        margin: 0px 3px 10px 3px;
     }
     .menulist {
         margin: 0;
@@ -173,7 +258,7 @@ a, input, button {
 /* ---- */
 
 /* hdpi */
- @media (min-width: 479px) and (max-width: 481px) {
+ @media (min-width: 480px) and (max-width: 719px) {
     #mulai {
         text-align: center;
         background: url('../img/hdpi/mulai.jpg') no-repeat 0 0;
@@ -184,6 +269,6 @@ a, input, button {
 /* ---- */
 
 /* xhdpi */
- @media (min-width: 719px) and (max-width: 721px) {
+ @media (min-width: 720px) and (max-width: 767px) {
 }
 /* ---- */

@@ -20,17 +20,29 @@ app.config(function($routeProvider) {
         }).when('/bantuan', {
             templateUrl: 'bantuan.html',
             controller: 'bantuanCtrl'
-        }).when('/selayang-1', {
+        }).when('/selayang/menu-1', {
             templateUrl: 'selayang-1.html'
-        }).when('/selayang-2', {
-            templateUrl: 'selayang.html',
+        }).when('/selayang/menu-2', {
+            templateUrl: 'selayang-2.html',
             controller: 'selayangCtrl'
-        }).when('/selayang-3', {
-            templateUrl: 'selayang.html',
+        }).when('/selayang/menu-3', {
+            templateUrl: 'selayang-3.html',
             controller: 'selayangCtrl'
-        }).when('/selayang-4', {
-            templateUrl: 'selayang.html',
+        }).when('/selayang/menu-4', {
+            templateUrl: 'selayang-4.html',
             controller: 'selayangCtrl'
+        }).when('/belajar/menu-1', {
+            templateUrl: 'belajar-1.html',
+            controller: 'belajarCtrl'
+        }).when('/belajar/menu-2', {
+            templateUrl: 'belajar-2.html',
+            controller: 'belajarCtrl'
+        }).when('/belajar/menu-3', {
+            templateUrl: 'belajar-3.html',
+            controller: 'belajarCtrl'
+        }).when('/belajar/menu-4', {
+            templateUrl: 'belajar-4.html',
+            controller: 'belajarCtrl'
         }).otherwise({
             redirectTo: "/"
         });
@@ -101,3 +113,8 @@ app.run(function($rootScope) {
 window.addEventListener('load', function() {
     FastClick.attach(document.body);
 }, false);
+
+function playSound(soundfile) {
+    document.getElementById("soundholder").innerHTML =
+        "<audio autoplay><source src='sound/" + soundfile + ".mp3' type='audio/mpeg'></audio>";
+}
