@@ -76,30 +76,6 @@ a, input, button {
 .animation.ng-leave.ng-leave-active {
     opacity:0;
 }
-.menu.ng-enter, .menu.ng-leave {
-    -webkit-transition:0.5s linear all;
-    -moz-transition:0.5s linear all;
-    -o-transition:0.5s linear all;
-    transition:0.5s linear all;
-    position:absolute;
-    top:0;
-    left:0;
-    right:0;
-}
-.menu.ng-enter {
-    z-index:100;
-    opacity:0;
-}
-.menu.ng-enter.ng-enter-active {
-    opacity:1;
-}
-.menu.ng-leave {
-    z-index:101;
-    opacity:1;
-}
-.menu.ng-leave.ng-leave-active {
-    opacity:0;
-}
 /* ---- */
 
 /* route */
