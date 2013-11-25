@@ -118,3 +118,4 @@ function playSound(soundfile) {
     document.getElementById("soundholder").innerHTML =
         "<audio autoplay><source src='sound/" + soundfile + ".mp3' type='audio/mpeg'></audio>";
 }
+

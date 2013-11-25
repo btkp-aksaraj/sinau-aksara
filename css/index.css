@@ -30,7 +30,6 @@ body {
     /* prevent copy paste, to allow, change 'none' to 'text' */
     background-color:#fff;
     font-family:"Lato", Helvetica, Arial, sans-serif;
-    font-size:18px;
     height:100%;
     margin:0px;
     padding:0px;
@@ -91,10 +90,24 @@ a, input, button {
  .putih {
     color: #fff;
 }
+.scrollbar::-webkit-scrollbar {
+    width: 5px;
+}
+.scrollbar::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+.scrollbar::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
 /* ---- */
 
 /* mdpi */
  @media (min-width: 1px) and (max-width: 479px) {
+    body, p {
+        font-size: 18px;
+    }
     #mulai {
         text-align: center;
         background: url('../img/mdpi/mulai.jpg') no-repeat 0 0;
@@ -197,7 +210,7 @@ a, input, button {
         overflow-y: scroll;
         height: 265px;
         text-align: left;
-        margin: 0px 38px 25px 38px;
+        margin: 0px 36px 25px 36px;
         padding: 0px 0px 0px 0px;
         -webkit-overflow-scrolling: touch;
     }
@@ -235,6 +248,9 @@ a, input, button {
 
 /* hdpi */
  @media (min-width: 480px) and (max-width: 719px) {
+    body, p {
+        font-size: 30px;
+    }
     #mulai {
         text-align: center;
         background: url('../img/hdpi/mulai.jpg') no-repeat 0 0;
@@ -375,5 +391,8 @@ a, input, button {
 
 /* xhdpi */
  @media (min-width: 720px) and (max-width: 767px) {
+    body, p {
+        font-size: 36px;
+    }
 }
 /* ---- */
